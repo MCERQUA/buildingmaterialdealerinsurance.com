@@ -1,0 +1,98 @@
+{
+  "source": "dataforseo_live",
+  "source_note": "Real DataForSEO data pulled 2026-06-17. Search-volume via Google Ads Search Volume Live; keyword suggestions via Labs. This is a genuine ultra-low-volume B2B specialty niche — most head terms (e.g. 'building material dealer insurance') return NULL volume because Google does not aggregate them. The exact-match domain IS the primary asset; the content strategy targets the broader construction-distribution insurance funnel + long-tail PAA queries that DO convert.",
+  "dataforseo_tasks_run": [
+    "keywords_data google_ads search_volume live (17 kws, $0.075)",
+    "serp google organic live advanced x3 head terms",
+    "dataforseo_labs keyword_suggestions live x3 seeds"
+  ],
+  "verified_volumes": [
+    { "keyword": "lumber yard insurance", "volume": 10, "competition_index": 39, "note": "MEDIUM competition, real B2B intent" },
+    { "keyword": "hardware store insurance", "volume": 140, "competition_index": 4, "note": "LOW competition — best-volume head term in niche" },
+    { "keyword": "sawmill insurance", "volume": 50, "competition_index": 29 },
+    { "keyword": "inland marine cargo insurance", "volume": 20, "competition_index": 41 }
+  ],
+  "null_volume_terms": [
+    "building material dealer insurance",
+    "building supply insurance",
+    "home improvement store insurance",
+    "contractor supply insurance",
+    "wholesale building supply insurance",
+    "lumber yard fire insurance",
+    "commercial auto delivery trucks insurance",
+    "product liability insurance distributor",
+    "equipment breakdown insurance boiler",
+    "workers comp forklift insurance",
+    "general liability building supply",
+    "umbrella liability distributor",
+    "property inventory insurance lumber"
+  ],
+  "null_note": "NULL = Google does not aggregate monthly search volume (term too specific / fragmented). These are still HIGH-INTENT commercial terms — we target them because competition is near-zero and they describe the exact buyer. Conversion value >> search volume here.",
+  "seed_keywords": [
+    "building material dealer insurance",
+    "lumber yard insurance",
+    "hardware store insurance",
+    "building supply insurance",
+    "sawmill insurance",
+    "home improvement store insurance",
+    "contractor supply insurance",
+    "wholesale building supply insurance",
+    "material yard insurance"
+  ],
+  "keywords": [
+    { "keyword": "building material dealer insurance", "volume_range": "1-30", "cpc_est": 26.0, "difficulty_est": 18, "intent": "commercial", "category": "pillar", "priority": "HIGH" },
+    { "keyword": "lumber yard insurance", "volume_range": "10-30", "cpc_est": 24.0, "difficulty_est": 25, "intent": "commercial", "category": "pillar", "priority": "HIGH", "verified_volume": 10 },
+    { "keyword": "hardware store insurance", "volume_range": "100-200", "cpc_est": 14.0, "difficulty_est": 12, "intent": "commercial", "category": "pillar", "priority": "HIGH", "verified_volume": 140 },
+    { "keyword": "building supply store insurance", "volume_range": "5-30", "cpc_est": 22.0, "difficulty_est": 16, "intent": "commercial", "category": "service" },
+    { "keyword": "sawmill insurance", "volume_range": "30-80", "cpc_est": 18.0, "difficulty_est": 22, "intent": "commercial", "category": "service", "verified_volume": 50 },
+    { "keyword": "home improvement store insurance", "volume_range": "1-30", "cpc_est": 16.0, "difficulty_est": 15, "intent": "commercial", "category": "service" },
+    { "keyword": "lumber yard fire insurance", "volume_range": "1-20", "cpc_est": 28.0, "difficulty_est": 14, "intent": "commercial", "category": "service", "priority": "HIGH — fire is the #1 lumber-yard exposure" },
+    { "keyword": "property insurance lumber yard", "volume_range": "1-20", "cpc_est": 22.0, "difficulty_est": 16, "intent": "commercial", "category": "service" },
+    { "keyword": "inventory insurance building supply", "volume_range": "1-30", "cpc_est": 20.0, "difficulty_est": 15, "intent": "commercial", "category": "service" },
+    { "keyword": "commercial auto delivery trucks insurance", "volume_range": "10-50", "cpc_est": 21.0, "difficulty_est": 28, "intent": "commercial", "category": "service" },
+    { "keyword": "box truck insurance delivery", "volume_range": "50-150", "cpc_est": 19.0, "difficulty_est": 24, "intent": "commercial", "category": "service" },
+    { "keyword": "inland marine cargo insurance", "volume_range": "10-30", "cpc_est": 23.0, "difficulty_est": 30, "intent": "commercial", "category": "service", "verified_volume": 20 },
+    { "keyword": "product liability insurance distributor", "volume_range": "1-30", "cpc_est": 25.0, "difficulty_est": 22, "intent": "commercial", "category": "service", "priority": "HIGH — defective product exposure is a major dealer risk" },
+    { "keyword": "workers comp forklift", "volume_range": "1-30", "cpc_est": 15.0, "difficulty_est": 18, "intent": "commercial", "category": "service" },
+    { "keyword": "forklift yard insurance", "volume_range": "1-20", "cpc_est": 17.0, "difficulty_est": 14, "intent": "commercial", "category": "service" },
+    { "keyword": "equipment breakdown insurance", "volume_range": "100-300", "cpc_est": 18.0, "difficulty_est": 30, "intent": "commercial", "category": "service" },
+    { "keyword": "boiler machinery insurance", "volume_range": "50-150", "cpc_est": 16.0, "difficulty_est": 26, "intent": "commercial", "category": "service" },
+    { "keyword": "premises liability contractor yard", "volume_range": "1-20", "cpc_est": 19.0, "difficulty_est": 14, "intent": "commercial", "category": "service" },
+    { "keyword": "umbrella liability business", "volume_range": "200-500", "cpc_est": 17.0, "difficulty_est": 32, "intent": "commercial", "category": "service" },
+    { "keyword": "contractor insurance arizona", "volume_range": "300-700", "cpc_est": 20.0, "difficulty_est": 38, "intent": "commercial", "category": "geo" },
+    { "keyword": "commercial insurance arizona", "volume_range": "300-700", "cpc_est": 22.0, "difficulty_est": 40, "intent": "commercial", "category": "geo" },
+    { "keyword": "how much does lumber yard insurance cost", "volume_range": "1-30", "cpc_est": 8.0, "difficulty_est": 10, "intent": "informational", "category": "long-tail" },
+    { "keyword": "what insurance does a hardware store need", "volume_range": "1-30", "cpc_est": 6.0, "difficulty_est": 8, "intent": "informational", "category": "long-tail" },
+    { "keyword": "does general liability cover product liability", "volume_range": "50-150", "cpc_est": 9.0, "difficulty_est": 16, "intent": "informational", "category": "long-tail" },
+    { "keyword": "builders risk vs property insurance", "volume_range": "50-150", "cpc_est": 10.0, "difficulty_est": 18, "intent": "informational", "category": "long-tail" },
+    { "keyword": "lumber yard fire protection requirements", "volume_range": "30-80", "cpc_est": 7.0, "difficulty_est": 14, "intent": "informational", "category": "long-tail" }
+  ],
+  "service_page_keywords": {
+    "general-liability": ["building supply general liability", "premises liability contractor yard", "GL insurance hardware store", "completed operations coverage dealer"],
+    "property-inventory": ["lumber yard property insurance", "inventory insurance building supply", "lumber yard fire insurance", "stock coverage wholesale dealer"],
+    "workers-compensation": ["workers comp forklift", "lumber yard workers comp", "warehouse workers compensation", "material handler work comp"],
+    "commercial-auto-delivery": ["commercial auto delivery trucks insurance", "box truck insurance delivery", "flatbed lumber delivery insurance", "material dealer fleet insurance"],
+    "inland-marine": ["inland marine cargo insurance", "inland marine building material", "cargo insurance lumber delivery", "transportation coverage dealer"],
+    "product-liability": ["product liability insurance distributor", "defective product coverage dealer", "wholesaler product liability", "completed product liability building supply"],
+    "equipment-breakdown": ["equipment breakdown insurance", "boiler machinery insurance", "kiln breakdown coverage sawmill", "furnace pressure vessel insurance"],
+    "umbrella-excess": ["umbrella liability business", "excess liability building supply", "commercial umbrella dealer", "catastrophe liability coverage"]
+  },
+  "geo_keywords": [
+    "contractor insurance arizona",
+    "commercial insurance arizona",
+    "building supply insurance arizona",
+    "lumber yard insurance arizona",
+    "material dealer insurance phoenix",
+    "material dealer insurance texas"
+  ],
+  "paa_questions_to_target": [
+    "What insurance does a lumber yard need?",
+    "How much is building material dealer insurance?",
+    "Does general liability cover inventory?",
+    "Is product liability included in general liability for distributors?",
+    "What does inland marine cover for a building supply dealer?",
+    "Why is lumber yard insurance so expensive (fire)?",
+    "Do I need workers comp for forklift drivers?",
+    "What is equipment breakdown insurance and do dealers need it?"
+  ]
+}
