@@ -8,6 +8,7 @@ import { CoverageMap } from "@/components/sections/CoverageMap";
 import { Stats } from "@/components/sections/Stats";
 import { FAQ } from "@/components/sections/FAQ";
 import { FinalCTA } from "@/components/sections/FinalCTA";
+import { HomeQuoteForm } from "@/components/sections/HomeQuoteForm";
 import { Footer } from "@/components/sections/Footer";
 
 export default function HomePage() {
@@ -25,6 +26,7 @@ export default function HomePage() {
         <CoverageMap />
         <FAQ />
         <FinalCTA />
+        <HomeQuoteForm />
       </main>
       <Footer />
     </>
