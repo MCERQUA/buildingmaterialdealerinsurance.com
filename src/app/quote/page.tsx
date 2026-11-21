@@ -85,15 +85,24 @@ export default function QuotePage() {
     setSubmitting(true);
     setError("");
     try {
-      await fetch(WEBHOOK_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          form_name: "quote",
-          source: "buildingmaterialdealerinsurance.com",
-          ...formData,
-        }),
-      });
+      let stored = false;
+      try {
+        const res = await fetch(WEBHOOK_URL, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                  form_name: "quote",
+                  source: "buildingmaterialdealerinsurance.com",
+                  ...formData,
+                }),
+              });
+        // The webhook answers 200 with stored:false when it did not store the lead.
+        if (res.ok) { const j = await res.json().catch(() => null); stored = !j || j.stored !== false; }
+      } catch { /* fall through to Netlify Forms */ }
+      if (!stored) {
+        const fb = await fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: new URLSearchParams({ "form-name": "quote", ...formData }).toString() });
+        if (!fb.ok) throw new Error(String(fb.status));
+      }
       setSubmitted(true);
     } catch {
       setError("Something went wrong. Please call us at 844-967-5247 or try again.");
