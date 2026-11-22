@@ -66,7 +66,7 @@ export default function QuotePage() {
     inventoryValue: "",
     message: "",
     "bot-field": "",
-    annual_gross_sales: "", city: "", coverage_for_uninsured_subcontractors: "", estimated_employee_count: "", estimated_employee_payroll: "", estimated_gross_sales: "", estimated_material_costs: "", estimated_subcontractor_expenses: "", percent_subcontractors_insured: "", prior_policy_expiration: "", prior_policy_number: "", prior_year_employee_count: "", prior_year_employee_payroll: "", prior_year_gross_sales: "", prior_year_subcontractor_expenses: "", street_address: "", subcontractors_have_insurance: "", zip: "",
+    annual_gross_sales: "", city: "", coverage_for_uninsured_subcontractors: "", estimated_employee_count: "", estimated_employee_payroll: "", estimated_gross_sales: "", estimated_material_costs: "", estimated_subcontractor_expenses: "", percent_subcontractors_insured: "", prior_policy_expiration: "", prior_year_employee_count: "", prior_year_employee_payroll: "", prior_year_gross_sales: "", prior_year_subcontractor_expenses: "", street_address: "", subcontractors_have_insurance: "", zip: "",
     coverage_types: "", year_business_started: "", business_description: "", class_code_1: "", class_code_2: "", class_code_3: "", class_code_4: "", class_code_5: "", residential_vs_commercial: "", new_vs_existing_construction: "", largest_projects: "", prior_carrier_name: "",
   });
   const [submitted, setSubmitted] = useState(false);
@@ -336,10 +336,6 @@ export default function QuotePage() {
         <div>
           <label className="block text-sm font-bold mb-1.5">Prior policy expiration date</label>
           <input type="date" name="prior_policy_expiration" value={formData.prior_policy_expiration} onChange={(e) => setFormData({ ...formData, prior_policy_expiration: e.target.value })} className="w-full px-4 py-2.5 border rounded-lg" />
-        </div>
-        <div>
-          <label className="block text-sm font-bold mb-1.5">Prior policy number</label>
-          <input type="text" name="prior_policy_number" value={formData.prior_policy_number} onChange={(e) => setFormData({ ...formData, prior_policy_number: e.target.value })} className="w-full px-4 py-2.5 border rounded-lg" />
         </div>
         <div>
           <label className="block text-sm font-bold mb-1.5">Prior year employee count</label>
