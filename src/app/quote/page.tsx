@@ -5,6 +5,7 @@ import { Navbar } from "@/components/sections/Navbar";
 import { Footer } from "@/components/sections/Footer";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { SITE } from "@/lib/site";
+import { QuoteForm as AcordQuoteForm } from "@/components/quote/QuoteForm";
 import { CheckCircle, Shield, ArrowRight, Phone, Flame } from "lucide-react";
 
 const US_STATES = [
@@ -428,6 +429,24 @@ export default function QuotePage() {
         </div>
 </form>
                 )}
+                <div id="business-application" className="card p-7 md:p-9 mt-10">
+                  <h2 className="font-heading text-2xl font-bold text-ink mb-2">Building material dealers: full commercial application</h2>
+                  <p className="text-sm text-muted mb-8">Answer the carrier underwriting questions here and we can quote building material dealer coverage without a second round of paperwork.</p>
+                  <AcordQuoteForm
+                    formName="quote"
+                    tradeName="Building Material Dealer"
+                    endpoint="/__forms.html"
+                    options={{ yn: true, feinRequired: false }}
+                    defaults={{ coverageTypes: "General Liability" }}
+                    classes={{
+                      input: inputClass,
+                      label: labelClass,
+                      legend: labelClass,
+                      heading: "font-heading text-xl font-bold text-ink",
+                      button: "px-8 py-4 bg-emerald-gradient text-white font-heading font-bold rounded-xl disabled:cursor-not-allowed disabled:opacity-40",
+                    }}
+                  />
+                </div>
               </div>
             </div>
           </div>
